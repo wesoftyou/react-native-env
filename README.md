@@ -1,17 +1,17 @@
 # react-native-env
 Guide on how to set up env for react native
 
-## Used for set up:
--Android productFlavors
--IOS scheme
--react-native-config
+# Used for set up:
+- Android productFlavors
+- IOS scheme
+- react-native-config
 
-###Warning
+**Warning**
 *  use only "dev" scheme/productFlavor for development,  "staging"/"prod" are going to be used while QA/Production
 *  For iOS  only "dev" scheme is debuggable, "stage"/"production" are signed via release configs
 
-## How to use
-######Android
+# How to use
+##Android
 **Run on device/emulator (debug mode)**
 1. `npm run  react-native run-android --variant=devDebug` (uses config from .env.dev)
 2. `npm run  react-native run-android --variant=stagingDebug` (uses config from .env.staging)
@@ -21,14 +21,14 @@ Guide on how to set up env for react native
  `Intent { cmp=com.app/.MainActivity } Error type 3 Error: Activity class {com.app/com.app.MainActivity} does not exist`
  - but it's ok, just launch application on  device/emulator**
  
- ** Assembling build (release mode)**
+**Assembling build (release mode)**
  1. `npm run  react-native run-android --variant=assembleDevRelease` (uses config from .env.dev)
  2. `npm run  react-native run-android --variant=assembleStagingRelease` (uses config from .env.staging)
  3. `npm run  react-native run-android --variant=assembleProdRelease` (uses config from .env.prod)
 
-######IOS
+##IOS
 **NOT use `react-native run-ios`**
-**Running on simulator/real device (release mode):**
+**Running on simulator/real device:**
 1. Choose schema
 2. Run on device/simulator
 
@@ -36,13 +36,9 @@ Guide on how to set up env for react native
 1. Choose schema
 2. Run "Product/Archive";
 
+#Make changes
 
-1.Running on simulator/real device (use schema for needed environment)
-2.
-
-##Make changes
-
-######Android
+##Android
 * `react-native-config` - basic link changes (MainApplication.java, settings.gradle, android/app/build.gradle);
 * `android/app/build.gradle`
 ![alt text](readme-img/build-gradle-defaultConfig.png)
@@ -53,3 +49,9 @@ Guide on how to set up env for react native
 - added `app/src/dev/res/values/strings.xml` for "dev" productFlavor - for bundle name `DEV-app`;
 - added `app/src/stage/res/values/strings.xml` for "stage" productFlavor - for bundle name `STAGING-app`;
 - added `app/src/production/res/values/strings.xml` for "production" productFlavor - for bundle name `app`;
+
+##IOS
+
+- `react-native-config` - basic link changes (Libraries, Build Setting, Linked Frameworks and Libraries, Build Phases);
+
+- Added new configuration (Staging)
