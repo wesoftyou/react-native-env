@@ -55,37 +55,35 @@ Guide on how to set up env for react native
 - `react-native-config` - basic link changes (Libraries, Build Setting, Linked Frameworks and Libraries, Build Phases);
 
 - Added new configuration (Staging)
-
-
-![alt text](readme.images/ios-project-configuration.png)
+![alt text](readme-img/ios-project-configuration.png)
 
 - Added new User-Defined Settings (APP_BUNDLE_ID_SUFFIX, APP_ENVIRONMENT, APP_PRODUCT_NAME)
 
-![alt text](readme.images/ios-project-additions.png)
+![alt text](readme-img/ios-project-additions.png)
 
 - Updated Product Bundle Identifier for each configuration (Debug, Staging, Release)
 
-![alt text](readme.images/ios-product-bundle-identifier.png)
+![alt text](readme-img/ios-product-bundle-identifier.png)
 
 - Added Library Search Paths fix for new configuration (Staging)
 
-![alt text](readme.images/ios-library-search-paths.png)
+![alt text](readme-img/ios-library-search-paths.png)
 
 - Added Per-configuration build products path fix for new configuration (for "App Target" on tab "Build Settings") (Staging) 
 
-![alt text](readme.images/ios-per-configuration-build-products-path.png)
+![alt text](readme-img/ios-per-configuration-build-products-path.png)
 
 - Updated Product Name (Added Prefix)
 
-![alt text](readme.images/ios-product-name-with-prefix.png)
+![alt text](readme-img/ios-product-name-with-prefix.png)
 
 - Duplicated "production" scheme - called "stage" scheme
 
-![alt text](readme.images/ios-scheme-duplicate.png)
+![alt text](readme-img/ios-scheme-duplicate.png)
 
 - Edited ALL schemes ("dev", "stage", "production"); For each scheme - setting up `Pre-actions`
 
-![alt text](readme.images/ios-scheme-edit.png)
+![alt text](readme-img/ios-scheme-edit.png)
 
 - Set up Pre-action script for ALL schemes (Build, Run, Archive):
 
@@ -93,7 +91,7 @@ Guide on how to set up env for react native
 1. "stage" - ".env.stage"
 1. "production" - ".env.production"
 
-![alt text](readme.images/ios-preaction-script.png)
+![alt text](readme-img/ios-preaction-script.png)
 
 - Set up Build Configuration script for ALL schemes (Run, Archive):
 
@@ -101,5 +99,5 @@ Guide on how to set up env for react native
 1. "stage" - "Staging"
 1. "production" - "Release"
 
-![alt text](readme.images/ios-scheme-run-staging.png)
-![alt text](readme.images/ios-scheme-archive-staging.png)
+![alt text](readme-img/ios-scheme-run-staging.png)
+![alt text](readme-img/ios-scheme-archive-staging.png)
